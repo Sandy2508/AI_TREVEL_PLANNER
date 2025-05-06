@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 import requests
-openai.api_key = "your-api-key"
+openai.api_key = "your-api-key" #api key
 def get_travel_suggestions(destination):
     search_url = f"https://www.googleapis.com/customsearch/v1?q=top+attractions+in+{destination}&key=your-google-api-key"
     response = requests.get(search_url)
